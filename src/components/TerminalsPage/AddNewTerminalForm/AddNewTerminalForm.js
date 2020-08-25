@@ -5,8 +5,6 @@ import Button from '../../common/Button'
 import TextAria from '../../common/TextAria'
 import { Paper } from '@material-ui/core'
 
-
-
 const useStyles = makeStyles(theme => ({
     root: {
         width: '100%',

@@ -4,9 +4,6 @@ import buyersPageReducer from './buyersPageReducer'
 import terminalsPageReducer from './terminalsPageReducer'
 import loginPageReducer from './loginPageReducer'
 
-
-
-
 let reducers = combineReducers({
     loginPage: loginPageReducer,
     buyersPage: buyersPageReducer,

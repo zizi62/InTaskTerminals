@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(4)
     }, container: {
         maxHeight: 440,
-        width:'100%',
+        width: '100%',
         overflowX: 'auto'
     },
     table: {
@@ -34,9 +34,7 @@ const useStyles = makeStyles((theme) => ({
         width: 300,
         marginBottom: theme.spacing(2)
     }
-
 }))
-
 
 const Buyers = (props) => {
 
@@ -111,8 +109,6 @@ const Buyers = (props) => {
     const setFullFilteredByers = () => {
         return tableSort(buyers, getComparator(order, orderBy)).slice(page * rowsPerPage, (page + 1) * rowsPerPage)
     }
-
-
 
     return (
         <div className={classes.root}>

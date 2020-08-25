@@ -1,4 +1,4 @@
-import React, {useEffect, useCallback} from 'react'
+import React, { useEffect, useCallback } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import Terminals from './Terminals'
 import { getTerminalsData, deleteTerminal } from '../../Redux/terminalsPageReducer'
@@ -10,24 +10,23 @@ const useStyles = makeStyles(theme => ({
     }
 }))
 
-
 const TerminalsContainer = (props) => {
-    const terminals = useSelector((state)=> state.terminalsPage.terminals)
+    const terminals = useSelector((state) => state.terminalsPage.terminals)
     const dispatch = useDispatch()
 
-    useEffect(()=>{
+    useEffect(() => {
         dispatch(getTerminalsData())
-    },[dispatch])
+    }, [dispatch])
 
     const handleDelete = useCallback((id) => {
         dispatch(deleteTerminal(id))
     }, [dispatch, deleteTerminal]);
-   
+
     const classes = useStyles();
     return (
-       <>
-       <Terminals terminals = {terminals} handleDelete = {handleDelete}/>
-       </>  
+        <>
+            <Terminals terminals={terminals} handleDelete={handleDelete} />
+        </>
     )
 }
 

@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
         width: '100%'
 
     },
-    list:{
+    list: {
         paddingTop: theme.spacing(1),
         paddingBottom: theme.spacing(1)
     }
@@ -27,19 +27,15 @@ const TerminalsPage = () => {
     const isAuth = useSelector((state) => state.loginPage.isAuth)
     const classes = useStyles()
 
-
     return (<>
         {!isAuth && <Redirect to={LOG_IN_PATH} />}
         <div className={classes.root}>
             <div className={classes.form}>
-            <AddNewTerminalFormContainer />
+                <AddNewTerminalFormContainer />
             </div>
-
             <div className={classes.list}>
-            <TerminalsContainer />
+                <TerminalsContainer />
             </div>
-
-
         </div>
     </>
 

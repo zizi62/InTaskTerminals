@@ -21,7 +21,6 @@ const Error = (props) => {
         <Paper className={classes.root}>
             {text}
         </Paper>
-
     )
 }
 

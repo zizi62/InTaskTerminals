@@ -17,16 +17,14 @@ const buyersPageReducer = (state = initialState, action) => {
     default:
       return state;
   }
-
 }
 
 export const setBuyersSuccess = (buyers) => ({ type: SET_BUYERS, buyers })
 export const setBuyerDataSuccess = (buyer) => ({ type: SET_BUYER_DATA, buyer })
 
-
 export const getBuyersList = () => (dispatch) => {
   let response = buyersAPI.getBuyers()
-  
+
   dispatch(setBuyersSuccess(response))
 }
 export const getBuyer = (buyerId) => (dispatch) => {

@@ -12,34 +12,30 @@ const useStyles = makeStyles((theme) => ({
     }
 }))
 
-
-
 const LoginForm = (props) => {
 
-    const {values, errors, handleInputChange} = props
-
+    const { values, errors, handleInputChange } = props
 
     const classes = useStyles()
     return (
-            <Paper className={classes.root}>
-                <Input
-                    label='Login'
-                    name='userName'
-                    value={values.userName}
-                    onChange={handleInputChange}
-                    error={errors.userName}
-                />
-                 <Input
-                    label='Password'
-                    name='password'
-                    type = 'password'
-                    value={values.password}
-                    onChange={handleInputChange}
-                    error={errors.password}
-                />
-                <Button text = 'Login' component = 'button' type = 'submit'/>
-            </Paper>
-
+        <Paper className={classes.root}>
+            <Input
+                label='Login'
+                name='userName'
+                value={values.userName}
+                onChange={handleInputChange}
+                error={errors.userName}
+            />
+            <Input
+                label='Password'
+                name='password'
+                type='password'
+                value={values.password}
+                onChange={handleInputChange}
+                error={errors.password}
+            />
+            <Button text='Login' component='button' type='submit' />
+        </Paper>
     )
 }
 

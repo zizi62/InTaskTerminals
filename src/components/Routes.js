@@ -10,14 +10,14 @@ export const TERMINALS_PATH = '/terminals'
 export const BUYERS_PATH = '/buyers'
 
 
-const Routes= () => {
+const Routes = () => {
 	return (
 		<>
 			<Route exact path={LOG_IN_PATH} component={LoginPage} />
-            <Route path={TERMINALS_PATH} component={TerminalsPage} />
-            <Route exact path={BUYERS_PATH} component={BuyersPage} />
+			<Route path={TERMINALS_PATH} component={TerminalsPage} />
+			<Route exact path={BUYERS_PATH} component={BuyersPage} />
 			<Route path={`${BUYERS_PATH}/:id`} component={BuyerPage} />
-			
+
 		</>
 	);
 };

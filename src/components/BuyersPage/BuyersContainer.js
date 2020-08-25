@@ -22,10 +22,7 @@ const BuyersContainer = (props) => {
     }, [dispatch])
 
     return (
-        
-            <Buyers buyersList={buyersList} />
-
-     
+        <Buyers buyersList={buyersList} />
     )
 }
 

@@ -24,7 +24,6 @@ const BuyerContainer = () => {
 
     return (
         <Buyer {...buyer} />
-
     )
 }
 

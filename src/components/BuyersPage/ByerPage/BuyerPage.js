@@ -8,17 +8,15 @@ const useStyles = makeStyles((theme) => ({
         position: 'relative',
         minHeight: '100%'
     }
-
 }))
 
-
 const BuyerPage = () => {
-   
+
     const classes = useStyles()
 
     return (
-        <div className = {classes.root}>
-         <BuyerContainer/>
+        <div className={classes.root}>
+            <BuyerContainer />
         </div>
     )
 }

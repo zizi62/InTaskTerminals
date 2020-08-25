@@ -3,8 +3,6 @@ import { AppBar, Toolbar, makeStyles, IconButton} from '@material-ui/core'
 import MobileSideBar from '../SideBar/MobilelSideBar/MobilelSideBar'
 import {  useSelector } from 'react-redux'
 
-
-
 const useStyle = makeStyles(theme => ({
     root:{
         // backgroundColor:'#fff',
@@ -15,8 +13,7 @@ const useStyle = makeStyles(theme => ({
             display: 'block'
     }
 }
-
-    
+ 
 }))
 
 
@@ -29,8 +26,6 @@ const Header = () => {
             {isAuth&& <MobileSideBar/>}
         </Toolbar>
     </AppBar>
-
-
 }
 
 export default Header 
